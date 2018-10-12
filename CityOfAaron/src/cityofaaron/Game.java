@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package game;
+package cityofaaron;
 
 /**
  *
@@ -15,13 +15,19 @@ public class Game implements Serializable {
 
   
     private Player  thePlayer;
-    
-    
-     public void setthePlayer(String name) {
-        this. = thePlayerame;
+
+    public Player getThePlayer() {
+        return thePlayer;
     }
 
-    public Player getThePlayer(String name) {
+    public void setThePlayer(Player thePlayer) {
         this.thePlayer = thePlayer;
     }
+
+    public Game(Player thePlayer) {
+        this.thePlayer = thePlayer;
+    }
+    
+    
+ 
 }

@@ -13,8 +13,8 @@ import java.io.Serializable;
 public  enum TeamMember implements Serializable{
     
     
-    memberOne("German D. De Marco");
-    memberTwo("Nefi Verduga");
+    memberOne("German D. De Marco")
+    memberTwo("Nefi Verduga")
     memberThree("Amosu Omoniyi");
     
     
