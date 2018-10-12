@@ -13,9 +13,9 @@ import java.io.Serializable;
 public  enum TeamMember implements Serializable{
     
     
-    memberOne("German D. De Marco")
-    memberTwo("Nefi Verduga")
-    memberThree("Amosu Omoniyi");
+      memberOne("German D. De Marco")
+   memberTwo("Nefi Verduga")
+memberThree("Amosu Omoniyi");
     
     
     private String name;
