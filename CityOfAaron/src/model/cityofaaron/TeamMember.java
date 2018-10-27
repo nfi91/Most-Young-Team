@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cityofaaron;
+package model.cityofaaron;
 
 /**
  *
@@ -13,10 +13,14 @@ import java.io.Serializable;
 public  enum TeamMember implements Serializable{
     
     
-      memberOne("German D. De Marco")
-   memberTwo("Nefi Verduga")
-memberThree("Amosu Omoniyi");
+        memberOne("German", "De Marco"),
+        memberTwo("Nefi", "Verduga"),
+        memberThree("Amosu", "Omoniyi");
     
+ TeamMember(String name, String title) {
+      this.name = name;
+      this.title = title;
+    }
     
     private String name;
 

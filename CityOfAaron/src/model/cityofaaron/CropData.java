@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cityofaaron;
+package model.cityofaaron;
 
 /**
  *
@@ -16,7 +16,7 @@ public class CropData  implements Serializable{
     private int population;
     private int acresOwned;
     private int cropYield;
-    private int wheaInStore;
+    private int wheatInStore;
     private int numberWhoDied;
     private int newPeople;
     private int harvest;
@@ -125,12 +125,12 @@ public class CropData  implements Serializable{
         this.numberWhoDied = numberWhoDied;
     }
 
-    public int getWheaInStore() {
-        return wheaInStore;
+    public int getWheatInStore() {
+        return wheatInStore;
     }
 
-    public void setWheaInStore(int wheaInStore) {
-        this.wheaInStore = wheaInStore;
+    public void setWheatInStore(int wheaInStore) {
+        this.wheatInStore = wheaInStore;
     }
     public int getCropYield() {
         return cropYield;
@@ -164,5 +164,6 @@ public class CropData  implements Serializable{
     public void setYear(int year) {
         this.year = year;
     }
+
     
 }
