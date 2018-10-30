@@ -126,5 +126,46 @@ public class CropControl {
         return offering_Payment;
 
     }
+    /**
+     *  @author nefi verduga
+     * 
+     * The acresPlanted method : Purpose: To plant a crop.
+     * 
+     * @param acres you have
+     * @param number of acres to plant
+     * @param required number of wheat necessary to plant
+     * @return the number of wheat remaining after planting
+	Pre-conditions: acres needed and wheat must be positive
+
+     */
+    public static int acresPlanted(int acresOwned, int acresToPlant, CropData cropData) {
+        //if acresToPlant < 1, return 1
+        if (acresToPlant < 1) {
+            return 1;
+        }
+        
+        //if acresOwned < 1, return 1
+        if (acresOwned < 1) {
+            return 1;
+        }
+        
+        //if acresOwned < acresToPlant, return 1
+        if (acresOwned < acresToPlant) {
+            return 1;
+        }
+        
+       // acresPlanted = acresOwned - acresToPlant
+       int acresPlanted ;
+        acresPlanted = cropData.getacresPlanted;
+        
+        //wheatInstoreAfterPlanted = wheatInStore - (acresPlanted*(1/2)
+        wheatInstoreAfterPlanted = wheatInStore - acresPlanted*(1/2) ;
+        cropData.setacresPlanted (acresPlanted);
+       
+                return wheatInStore;
+    }
+
+}
+
 
 }
